@@ -50,6 +50,13 @@ app.get('/bad', (req, res) => {
     errorMessage: 'Unable to handle request'
   });
 });
+
+app.get('/projects', (req, res) =>{
+  res.render('projects.hbs', {
+    pageTitle: 'Projects',
+    welcomeMessage: "Weclome to Joe Horn's project page"
+  })
+});
 //3000 if local, variable for heroku
 app.listen(port, () => {
   console.log(`Server is up on port ${port}`);
