@@ -1,0 +1,5 @@
+node_modules/
+server.log
+sublime.html
+.DS_Store
+package-lock.json
